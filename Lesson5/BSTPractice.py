@@ -1,4 +1,4 @@
-#10th Feb, 2024: Added 'return' keyword to method search_recursive in two lines with recursive calls as even valid search like print tree.search(6) were return False
+#10th Feb, 2024: Added 'return' keyword to method search_recursive in two lines with recursive calls as even valid search like print tree.search(1) were return False
 class Node(object):
     def __init__(self, value):
         self.value = value
