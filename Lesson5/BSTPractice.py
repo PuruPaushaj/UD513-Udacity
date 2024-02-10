@@ -1,3 +1,4 @@
+#10th Feb, 2024: Added 'return' keyword to method search_recursive in two lines with recursive calls as even valid search like print tree.search(6) were return False
 class Node(object):
     def __init__(self, value):
         self.value = value
@@ -29,9 +30,9 @@ class BST(object):
     def search_recursive(self, start, find_val):
         if start:
             if start.value > find_val:
-                self.search_recursive(start.left, find_val)
+                return self.search_recursive(start.left, find_val)
             elif start.value < find_val:
-                self.search_recursive(start.right, find_val)
+                return self.search_recursive(start.right, find_val)
             else:
                 return True
         return False
